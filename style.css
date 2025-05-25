@@ -1,6 +1,26 @@
-h1{text-align:centre;
-     background-color:black;
-     color:white;
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+h1 {
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    font-size: 40px;
+}
 
+p{
+    color: black;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.cursor{
+    cursor: pointer;
+}
