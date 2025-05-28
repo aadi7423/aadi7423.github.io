@@ -1,26 +1,61 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-
-        <link rel="stylesheet" href="style.css">
+    
+        <!-- Title and auxiliary files -->
         <title>Just for Fun</title>
+        <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <div>
-    <h1 class="cursor">
-        <a href="index.html">
-            Hello Everyone!!
-        </a>
-    </h1>
-    </div>
 
-    <div>
-        <p>This is a website I made using basic coding just for fun.</p>
-    </div>
+    <header>
+
+        <div> <!-- Heading -->
+            <h1 id="cursor" class="top">
+                <a href="index.html" class="menu">
+                    Hello Everyone!!
+                </a>
+            </h1>
+        </div>
+            
+        <div> <!-- Clock -->
+            <span id="MyClockDisplay" class="clock" onload="showTime()"></span>
+        </div>
+    </header>
+    
+        <br class="no">
+        <hr>
+
+    <main>
+        <div>
+            <p id="heading">Description:</p>
+        </div>
+        
+
+        <div> <!--Main Content-->
+            <p>This is a website I made using basic coding just for fun.
+            </p>
+        </div>
+       
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <div>
+            <a href="index.html">
+                <h2 class="footer">Home
+            </h2>
+        </a>
+        </div>
+    </footer>
+
+    <!-- Java Code -->
+    <script src="grid.js"></script>
     
 </body>
 
