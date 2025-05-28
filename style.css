@@ -1,26 +1,63 @@
-body{
+
+/* General Items */
+head, body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f7f7f7;
 }
 
-h1 {
+p{  color: black;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+a{  text-decoration: none;
+    color: black;
+}
+
+footer{text-align: center;}
+
+hr{border-top: 2px solid black;}
+
+/* Class */
+.top {
     text-align: center;
     background-color: blueviolet;
     color: white;
     padding: 5px;
-    font-size: 40px;
+    font-size: 50px;
+    border-radius: 15px;
 }
 
-p{
-    color: black;
-    font-size: 30px;
-}
-
-a{
+a.menu{
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-.cursor{
-    cursor: pointer;
+br.no{line-height: 250%;}
+
+/* IDs */
+
+#cursor{cursor: pointer;}
+
+#heading{
+    font-weight: bold;
+    font-size: 30px;
 }
+
+/* Special */
+
+.clock {
+    float: right;
+    background: blueviolet;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    border: solid blueviolet;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
