@@ -1,12 +1,15 @@
 
 /* General Items */
 head, body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #f7f7f7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #f7f7f7;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 p{  color: black;
-    font-size: 20px;
+    font-size: 1.6vw;
     line-height: 15px;
 }
 
@@ -14,18 +17,23 @@ a{  text-decoration: none;
     color: black;
 }
 
-footer{text-align: center;}
+.footer{
+  display: flex;
+  justify-content: center;
+  gap: 1%
+}
 
 hr{border-top: 2px solid black;}
 
-/* Class */
-.top {
-    text-align: center;
-    background-color: blueviolet;
-    color: white;
-    padding: 5px;
-    font-size: 50px;
-    border-radius: 15px;
+img.logo{
+    height: auto;
+    width: 15%;
+}
+
+span.top{
+    margin-left: 0%;
+    background-color: #f7f7f7;
+    align-self: center;
 }
 
 a.menu{
@@ -34,30 +42,127 @@ a.menu{
     font-weight: bold;
 }
 
+hr.top{
+    margin-top: 1%;
+}
+
 br.no{line-height: 250%;}
 
 /* IDs */
-
 #cursor{cursor: pointer;}
 
 #heading{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
-/* Special */
+/* Reset & base styles */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: purple;
+  color: white;
+  padding: 10px 15px;
+  position: relative;
+}
 
-.clock {
-    float: right;
-    background: blueviolet;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Orbitron;
-    letter-spacing: 2px;
-    border: solid blueviolet;
-    border-radius: 10px;
-    padding: 5px;
+/* Hamburger */
+.hamburger {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Center Text */
+.nav-text {
+  text-align: center;
+  flex: 1;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+/* Right Image */
+.nav-image img {
+  width: 180px;
+}
+
+/* Side Nav (hidden by default) */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 15%;
+  background: rgba(255,255,255,0.4);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  transition: left 0.3s ease;
+}
+
+.side-nav a {
+  padding: 12px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  transition: background 0.2s;
+}
+
+.side-nav a:hover {
+  background-color: #555;
+}
+
+/* Open menu */
+.side-nav.open {
+  left: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-text {
+    font-size: 16px;
     
+  }
+
+  .nav-image img {
+    width: 30px;
+    height: 30px;
+  }
 }
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: black;
+  justify-content: center;
+}
+
+#resume-head{
+  text-align: center;
+  font-size: 2.2vw;
+  background-color: silver;
+}
+
+.resume-details{
+  background-color: silver;
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.resume-left{
+  margin-left: 7%;
+  text-align: left;
+  font-size: 2vw;
+}
+
+.resume-right{ 
+  text-align: right;
+}
+
 
